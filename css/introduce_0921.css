@@ -1,0 +1,35 @@
+.introduce{width: 100%; height: 700px;
+	 margin-top: 60px;}
+.introduce:after{content: ""; display: inline-block; clear: both;}
+
+.introduce>dl{width: 50%; float: left;}
+.introduce>dl>dt{font-size: 3rem; color: #000; padding-bottom: 20px;}
+.introduce>dl>dd{font-size: 3.5rem; color: brown;padding-bottom: 20px;}
+.introduce>dl>p{font-size: 2rem; color: #333;padding-bottom: 20px;}
+
+.introduce>.introduceimg{width: 32%; float: right;}
+.introduce>.introduceimg>img{width: 100%;}
+
+
+
+
+
+
+@media (max-width:1279px) {
+	
+}
+
+
+@media (max-width:767px) {
+	.introduce{height: 900px;}
+	
+	.introduce>dl{width: 100%;}
+	.introduce>dl>dt{font-size: 3rem;;}
+	.introduce>dl>dd{font-size: 3rem;}
+	.introduce>dl>p{font-size: 1.6rem;}
+	
+	.introduce>.introduceimg{width: 100%; text-align: center;}
+	.introduce>.introduceimg>img{width: 50%; margin-bottom: 30px;}
+	
+	
+}

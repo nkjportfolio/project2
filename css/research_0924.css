@@ -1,0 +1,33 @@
+.research{width: 100%; height: 60px; border-bottom: 1px solid #dedede; line-height: 60px;}
+.research:after{content: ""; display: inline-block; clear: both;}
+
+.research>li{float: left; width: 11%; text-align: center; position: relative;}
+/*.seat>li:before{content: ""; display: inline-block; width: 4px; height: 4px; background-color: #dedede;
+position: absolute; top: 50%; right: 1%;}
+.seat>li:last-child:before{display: none;}*/
+
+.research>li:hover:after,.research>li:focus:after{content: ""; display: inline-block;
+	position: absolute; bottom: 3px; left: 0;
+	width: 100%;
+	border-bottom: 3px solid #cf3128;}
+.research>li>a{
+	font-size: 2rem; color: #333;}
+
+.researchimg{margin-top: 60px; text-align: center;}
+
+/*이미지 같이 화면크기랑 같이 줄어들게*/
+.researchimg>img{width: 100%;}
+
+@media (max-width:1279px) {
+	.research{height: 125px;}
+	.research>li{width: 20%;}
+	
+}
+
+
+@media (max-width:767px) {
+	.research{height: 316px;}
+	.research>li{width: 50%;}
+	
+	
+}
