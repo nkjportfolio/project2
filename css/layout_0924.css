@@ -47,7 +47,7 @@ a{text-decoration: none;}
 }
 .m_hammn>li>ul>li{border-bottom: 1px solid  #996600; box-sizing: border-box;
 	background-color: #fff;
-	/*padding: 15px 65px;*/
+
 height:50px;
 }
 .m_hammn>li>ul>li:last-child{border-bottom: 0;}
@@ -62,7 +62,7 @@ height:50px;
 .b_header>.menu{width: 1200px; height: 55px; margin: 0 auto;
 position: relative;}
 
-/*performance.css의 f_header overflow 때문에 수정한 것*/
+
 .b_header>.menu> .mainmn{height: 55px;
     overflow: hidden;}
 
@@ -163,7 +163,7 @@ left: 60px;}
 left: 95px;}
 
 .mainbtn>.centerbtn>a{position: absolute; width: 24px; height: 24px; top: 5px;
-	/*background-color: antiquewhite;*/
+
 }
 
 /*.mainbtn>.play:hover{
@@ -268,7 +268,7 @@ transition: 0.1s;}
 }
 
 .calendar>.small:hover{background-color: #cf3128; transition: 0.3s;}
-/*.calendar>.big>.txt_box>div:hover{color: #cf3128;}*/
+
 
 .calendar>.big>.txt_box>div>p{font-size: 1.8rem;
 margin-top: 5%;}

@@ -3,10 +3,7 @@ position: relative;
 	overflow: hidden;
 }
 
-/*애니메이션 넣고 여백 생겨서 index layout에서 넣은 것
-.b_header>.menu> .mainmn{height: 55px;
-    overflow: hidden;}
-*/
+
 
 .f_header>.inner{width: 1200px; height: 205px; margin: 0 auto;
 }

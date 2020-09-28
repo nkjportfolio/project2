@@ -15,7 +15,7 @@ position: absolute; top: 50%; right: 1%;}
 
 .researchimg{margin-top: 60px; text-align: center;}
 
-/*이미지 같이 화면크기랑 같이 줄어들게*/
+
 .researchimg>img{width: 100%;}
 
 @media (max-width:1279px) {
