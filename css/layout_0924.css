@@ -126,23 +126,17 @@ position: absolute;top: 350px; z-index: 1;}
 
 
 /*메인이미지*/
-#mainimg{position: relative;}
-#mainimg>.mainslide{width: 100%;
+#mainimg{/*position: relative;*/}
+#mainimg>.flexslider{width: 100%;
 	/*background-image: url(../img/mainimg1.jpg); background-repeat: no-repeat;background-position: center center;
 	background-size: cover;*/
-overflow: hidden;}
+/*overflow: hidden;*/}
 
 
-#mainimg>.mainslide{}
-#mainimg>.mainslide>ul{}
-#mainimg>.mainslide>ul>li{}
-#mainimg>.mainslide>ul>.slider1{
-
-}
-#mainimg>.mainslide>ul>.slider2{}
 
 
-/*메인버튼*/
+
+/*메인버튼
 
 .mainbtn>.arrbtn>.arr_left{position: absolute; top: 40%; left: 10%; opacity: 0.5; transition: 0.2s;}
 .mainbtn>.arrbtn>.arr_left:hover{opacity: 1; transition: 0.3s;}
@@ -165,6 +159,7 @@ left: 95px;}
 .mainbtn>.centerbtn>a{position: absolute; width: 24px; height: 24px; top: 5px;
 
 }
+*/
 
 /*.mainbtn>.play:hover{
 	background-image: url(../img/btn_paly.png); background-repeat: no-repeat; background-position: center center;
@@ -229,14 +224,14 @@ position: absolute; top: -40px; left: -20px;}
 .news>.inner>.slide{float: right; width: 30%;
 	position: relative;
 	}
-.news>.inner>.slide>.slider{
+/*.news>.inner>.slide>.slider{
 	}
 .news>.inner>.slide>img{
 	position: absolute;
 	opacity: 0.5;
 transition: 0.1s;}
 .news>.inner>.slide>img:hover{opacity: 1; transition: 0.3s;}
-
+*/
 .news>.inner>.slide>.left{bottom: 2px; right: 110px;}
 .news>.inner>.slide>.middle{bottom: 2px; right: 62px;}
 .news>.inner>.slide>.right{bottom: 2px; right: 15px;}
@@ -415,7 +410,9 @@ position: absolute; top: -15%; right: 18.5%;
 	
 	.news>.inner>.slide{width: 50%;}
 	.news>.inner>.slide{margin-top: 50px; }
-	.news>.inner>.slide>.slider>img{}
+	/*배너 슬라이드 이미지*/
+	.news>.inner>.slides>li{background-color: aqua;}
+	.news>.inner>.slides>li>img{width: 346px; height: 246px;}
 	.news>.inner>.slide>.right{right: 40px;}
 	.news>.inner>.slide>.middle{right: 90px;}
 	.news>.inner>.slide>.left{right: 140px;}
@@ -430,7 +427,8 @@ position: absolute; top: -15%; right: 18.5%;
 	
 	.calendar>.big>.txt_box{margin-left: 0; }
 	.calendar>.big>.txt_box>div{display: inline;}
-	.calendar>.big>.txt_box>div>p{margin: 0;}
+	.calendar>.big>.txt_box>div>p{margin: 0;
+	text-align: center;}
 	
 	.banner{width: 100%; height: 500px;}
 	.banner>div{width: 25%; margin-right:0;}
@@ -528,7 +526,7 @@ position: absolute; top: -15%; right: 18.5%;
 	.calendar>.big{}
 	
 	/*pc500에 맞게한거*/
-	.calendar>.big>.txt_box{margin-left: 16%;}
+	.calendar>.big>.txt_box{}
 	/**/
 	
 	.calendar>.small{height: 70px;}
@@ -539,7 +537,15 @@ position: absolute; top: -15%; right: 18.5%;
 	.banner{height: 1600px; text-align: center;}
 	.banner>div{width: 100%;}
 	.banner>div:first-child>img{margin-left: 6%;}
-	.banner>div>.cover,.banner>div:first-child>.cover{width: 277px; margin-left: 12%; display: none;}
+	
+	/*커버*/
+	.banner>div>.cover,.banner>div:first-child>.cover{width: 277px; margin-left: 12%; /*display: none;*/}
+	
+	
+	.banner>div>.cover{margin-left: 25%;}
+	.banner>div:first-child>.cover{margin-left: 26.2%;}
+	
+	/*텍스트*/
 	.banner>div:first-child>p {left: 43%;}
 	.banner>div>p {left: 40%;}
 	.banner>div:last-child>p{left: 38%;}
@@ -560,7 +566,9 @@ position: absolute; top: -15%; right: 18.5%;
 	.archives>.inner>div{width: 100%;}
 	.archives>.inner>div:nth-child(2)>img{margin-left: 6%;}
 	
-	.archives>.inner>div:nth-child(2)>.cover,.archives>.inner>div>.cover{width: 277px; margin-left: 12%; display: none;}
+	/*커버*/
+	.archives>.inner>div:nth-child(2)>.cover,.archives>.inner>div>.cover{width: 277px; margin-left: 12%;
+	/*display: none;*/}
 	.archives>.inner>div>p{left: 42%;}
 	.archives>.inner>div:nth-child(4)>p{left: 42%;}
 	.archives>.inner>div:nth-child(5)>p{left: 35%;}
