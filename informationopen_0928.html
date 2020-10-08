@@ -4,48 +4,56 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>국립국악원 이용안내</title>
+	<title>국립국악원 정보공개</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/layout_0924.css">
 	<link rel="stylesheet" type="text/css" href="css/performance_layout_0910.css">
 	<link rel="stylesheet" type="text/css" href="css/informationopen_0928.css">
+
 	
-	<!--모바일메뉴스크립트 링크-->
-	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!--모바메뉴 css-->
+	<link href="dist/css/slimmenu.min.css" rel="stylesheet" media="screen">
 	
-	<!--모바일메뉴스크립트-->
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(".sub").hide();
-			$(".m_hammn li").click(function(){
-				$("ul",this).slideToggle("fast");
-			});
-		});
-	</script>
 </head>
 <body>
 <div id=" wrap">
 	<header id="header">
 		<div class="t_header">
-			<ul class="m_hammn">
-
-						<li><a href="#"><img src="img/mobile_hammenu.png" alt="모바일햄메뉴"></a>
-
-							<ul class="sub">
-								<li><a href="performance_0907.html">공연/대관</a></li>
-								<li><a href="edu_0924.html">교육/대회</a></li>
-								<li><a href="research_0924.html">연구/자료</a></li>
-								<li><a href="participation_0921.html">참여</a></li>
-								<li><a href="introduce_0921.html">소개</a></li>
-								<li><a href="informationuse_0921.html">이용안내</a></li>
-								<li><a href="informationopen_0928.html">정보공개</a></li>
-
-							</ul>
-						</li>
-					</ul>
+			
 			
 			<h1 class="logo"><a href="index.html"><img src="img/logo_h.png" alt="로고"></a></h1>
 			
+			<!--모바메뉴-->
+
+<ul class="slimmenu">
+<li><a href="performance_0907.html">공연/대관</a>
+		<!--<ul>
+            <li>
+                <a href="#">Slim Menu 1.1</a>
+                <ul>
+                    <li><a href="#">Slim Menu 1.1.1</a></li>
+                    <li>
+                        <a href="#">Slim Menu 1.1.2</a>
+                        <ul>
+                            <li><a href="#">Slim Menu 1.1.2.1</a></li>
+                            <li><a href="#">Slim Menu 1.1.2.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Slim Menu 1.2</a></li>
+         </ul>-->
+</li>
+
+<li><a href="edu_0924.html">교육/대회</a></li>
+<li><a href="research_0924.html">연구/자료</a></li>
+<li><a href="participation_0921.html">참여</a></li>
+<li><a href="introduce_0921.html">소개</a></li>
+<li><a href="informationuse_0921.html">이용안내</a></li>
+<li><a href="informationopen_0928.html">정보공개</a></li>
+</ul>
+		
 			<ul>
 				<li>로그인</li>
 				<li>회원가입</li>
@@ -251,8 +259,8 @@
 			</div>
 			
 			
+			</div>
 		</div>
-		
 		<div class="info">
 			<ul>
 				<img src="img/icon_person.png" alt="인포">
@@ -288,6 +296,31 @@
 		</div>
 		
 	</footer>
-</div>			
+</div>		
+
+	<!--모바메뉴-->
+	<script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/jquery.easing.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.slimmenu.min.js"></script>
+    <script>
+	$(function() {
+		$('.nav a, .brand, a[data-target]').click(function(){
+			$('html, body').animate({
+				scrollTop: $($(this).attr('data-target')).offset().top-50
+			}, 500)
+		})
+	});
+	$('.slimmenu').slimmenu(
+	{
+		resizeWidth: '800',
+		collapserTitle: '',
+		easingEffect:'easeInOutQuint',
+		animSpeed:'medium',
+		indentChildren: true,
+		childrenIndenter: '&raquo;'
+	});
+	</script>
+		
 </body>
 </html>
