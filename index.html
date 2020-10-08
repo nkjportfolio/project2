@@ -7,9 +7,20 @@
 
 	<title>국립국악원 메인</title>
 
-	<link rel="stylesheet" type="text/css" href="css/layout_0924.css">
+	<link rel="stylesheet" type="text/css" href="css/layout_1008.css">
 	
-	<!--제이쿼리 플러그인 적용-->
+	<!--모바메뉴 css-->
+	<link href="dist/css/slimmenu.min.css" rel="stylesheet" media="screen">
+    
+    <!--배너슬라이드-->
+    <link href='banner/css/style.css' rel='stylesheet' type='text/css' />
+		
+	<script type='text/javascript' src='banner/js/jquery1.3.2.js'></script>
+
+	<link href='banner/css/tabbedContent.css' rel='stylesheet' type='text/css' />
+	<script src="banner/js/tabbedContent.js" type="text/javascript"></script>
+
+	<!--메인슬라이드 css-->
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/flexslider.css" />
 	<link rel="stylesheet" href="css/demo.css" />
@@ -146,25 +157,41 @@
 	<div id="wrap">
 		<header id="header">
 			<div class="t_header">
+			
+			<h1 class="logo"><a href="index.html"><img src="img/logo_h.png" alt="로고"></a></h1>
+<!--모바메뉴-->
 
-				<ul class="m_hammn">
+<ul class="slimmenu">
+<li><a href="performance_0907.html">공연/대관</a>
+		<!--<ul>
+            <li>
+                <a href="#">Slim Menu 1.1</a>
+                <ul>
+                    <li><a href="#">Slim Menu 1.1.1</a></li>
+                    <li>
+                        <a href="#">Slim Menu 1.1.2</a>
+                        <ul>
+                            <li><a href="#">Slim Menu 1.1.2.1</a></li>
+                            <li><a href="#">Slim Menu 1.1.2.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Slim Menu 1.2</a></li>
+         </ul>-->
+</li>
 
-					<li><a href="#"><img src="img/mobile_hammenu.png" alt="모바일햄메뉴"></a>
+<li><a href="edu_0924.html">교육/대회</a></li>
+<li><a href="research_0924.html">연구/자료</a></li>
+<li><a href="participation_0921.html">참여</a></li>
+<li><a href="introduce_0921.html">소개</a></li>
+<li><a href="informationuse_0921.html">이용안내</a></li>
+<li><a href="informationopen_0928.html">정보공개</a></li>
+</ul>
+					
 
-						<ul class="sub">
-							<li><a href="performance_0907.html">공연/대관</a></li>
-							<li><a href="edu_0924.html">교육/대회</a></li>
-							<li><a href="research_0924.html">연구/자료</a></li>
-							<li><a href="participation_0921.html">참여</a></li>
-							<li><a href="introduce_0921.html">소개</a></li>
-							<li><a href="informationuse_0921.html">이용안내</a></li>
-							<li><a href="informationopen_0928.html">정보공개</a></li>
-
-						</ul>
-					</li>
-				</ul>
-
-				<h1 class="logo"><a href="index.html"><img src="img/logo_h.png" alt="로고"></a></h1>
+				
 
 				<ul>
 					<li>로그인</li>
@@ -276,30 +303,7 @@
 
 		<!--메인이미지-->
 		<section id="mainimg">
-			<!--<div class="mainslide flexslider">
-				<ul class="slides">
-					<li class="slider1"><img src="img/mainimg1.jpg" alt="메인이미지1"></li>
-					<li class="slider2"><img src="img/mainimg2.jpg" alt="메인이미지2"></li>
-				</ul>
-				
-				<div class="flex-direction-nav">
-					<ul class="flex-direction-nav">
-						<li class="flex-nav-prev">
-							<a class="flex-prev" href="#">
-								::before
-								"Previous"
-							</a>
-						</li>
-
-						<li class="flex-nav-next">
-							<a class="flex-prev" href="#">
-								::after
-								"Next"
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>-->
+			
 
 			<div id="hero">
 			
@@ -384,25 +388,45 @@
 
 					</div>
 <!--배너 슬라이드-->
-					
-					<div class="slide  flexslider flexslider2">
-						<ul class="slides">
-							<li><img src="img/minibanner1.jpg" alt="슬라이드"></li>
-							<li><img src="img/minibanner2.jpg" alt="슬라이드"></li>
-						</ul>
+<div class='tabbed_content'>
+	<div class='tabs'>
+		<div class='moving_bg'>
+			&nbsp;
+		</div>
+		<span class='tab_item'>
+			휴관안내
+		</span>
+		<span class='tab_item'>
+			공연안내
+		</span>
+<!--		<span class='tab_item'>
+			Partners
+		</span>
+		<span class='tab_item'>
+			Links
+		</span>-->
+	</div>
+	
+<div class="tab">
+	<div class='slide_content'>						
+		<div class='tabslider'>
+			<ul>
+				<li>
+					<img src="img/minibanner1.jpg" alt="공지">
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="img/minibanner2.jpg" alt="공지">
+				</li>
+			</ul>
+		</div>
+		<br style='clear: both' />
+	</div>
+</div><!--탭끝-->
+</div>				
 
-						
-					</div>
-					
-					<!--<div class="slide">
-						<div class="slider"><img src="img/minibanner1.jpg" alt="슬라이드"></div>
-
-						<img src="img/banner_left.png" class="left">
-						<img src="img/banner_middle.png" class="middle">
-						<img src="img/banner_right.png" class="right">
-					</div>-->
-
-				</div>
+				</div><!--이너div-->
 
 				<div class="calendar">
 					<div class="small">
@@ -546,9 +570,45 @@
 
 
 	</div>
+	
+	<!--모바메뉴-->
+	<script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/jquery.easing.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.slimmenu.min.js"></script>
+    <script>
+	$(function() {
+		$('.nav a, .brand, a[data-target]').click(function(){
+			$('html, body').animate({
+				scrollTop: $($(this).attr('data-target')).offset().top-50
+			}, 500)
+		})
+	});
+	$('.slimmenu').slimmenu(
+	{
+		resizeWidth: '800',
+		collapserTitle: '',
+		easingEffect:'easeInOutQuint',
+		animSpeed:'medium',
+		indentChildren: true,
+		childrenIndenter: '&raquo;'
+	});
+	</script>
+	
+	
+	<!--배너 슬라이드-->
+
+    
+    
+    
 </body>
-<script src="js/jquery.js"></script>
+
+	<!--메인-->
+	<script src="js/jquery.js"></script>
 	<script type="text/javascript" src="http://www.queness.com/js/bsa2.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script src="js/demo.js"></script>
+	
+	
+
 </html>
