@@ -360,6 +360,7 @@ background-color: rgba(0,0,0,.8);
 #footer>.t_footer>.top{width: 61px; height: 61px; background-image: url(../img/top_yellow.png);
 	transition: 0.2s;
 position: absolute; top: -15%; right: 18.5%;
+	cursor: pointer;
 }
 #footer>.t_footer>.top:hover{background-image: url(../img/top_red.png); transition: 0.3s}
 
